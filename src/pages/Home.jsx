@@ -190,6 +190,10 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <Reveal variant="fade" delay={0.2} className="why-skyline" aria-hidden="true">
+          <img src="/images/sections/chicago-skyline.svg" alt="" width="1200" height="420" loading="lazy" />
+        </Reveal>
       </section>
 
       {/* TESTIMONIALS */}

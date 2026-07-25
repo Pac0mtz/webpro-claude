@@ -26,6 +26,7 @@ export default function Services() {
           {services.map((s, i) => (
             <Reveal key={s.slug} delay={i * 0.05} className="service-row glass">
               <span className="service-row-tag">{s.tag}</span>
+              <img className="service-row-art" src={`/images/services/${s.slug}.svg`} alt="" width="800" height="560" loading="lazy" aria-hidden="true" />
               <div className="service-row-body">
                 <span className="service-row-cat">{s.category}</span>
                 <h3>

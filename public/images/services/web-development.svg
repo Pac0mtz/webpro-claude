@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Web development illustration">
+  <defs>
+    <radialGradient id="gA" cx="25%" cy="20%" r="60%"><stop offset="0%" stop-color="#34d399" stop-opacity=".28"/><stop offset="100%" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gB" cx="85%" cy="80%" r="55%"><stop offset="0%" stop-color="#41b6e6" stop-opacity=".22"/><stop offset="100%" stop-color="#41b6e6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gT" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6ee7b7"/><stop offset="100%" stop-color="#41b6e6"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".05"/></pattern>
+    <path id="star" d="M0-12 2.5-4.33 10.39-6 5 0l5.39 6-7.89-1.67L0 12l-2.5-7.67L-10.39 6-5 0l-5.39-6 7.89 1.67z"/>
+  </defs>
+  <rect width="800" height="560" rx="24" fill="#0a1917"/>
+  <rect width="800" height="560" rx="24" fill="url(#gA)"/>
+  <rect width="800" height="560" rx="24" fill="url(#gB)"/>
+  <rect width="800" height="560" rx="24" fill="url(#grid)"/>
+  <rect width="799" height="559" x=".5" y=".5" rx="23.5" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <!-- editor window -->
+  <g transform="translate(130 100)">
+    <rect width="540" height="360" rx="16" fill="#0d211f" stroke="url(#gT)" stroke-width="2.5"/>
+    <line x1="0" y1="48" x2="540" y2="48" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+    <circle cx="28" cy="24" r="6" fill="#e4002b" opacity=".8"/><circle cx="52" cy="24" r="6" fill="#ffffff" opacity=".18"/><circle cx="76" cy="24" r="6" fill="#ffffff" opacity=".18"/>
+    <!-- code lines -->
+    <rect x="46" y="78" width="90" height="12" rx="6" fill="#41b6e6" opacity=".9"/>
+    <rect x="150" y="78" width="150" height="12" rx="6" fill="#ffffff" opacity=".2"/>
+    <rect x="76" y="108" width="130" height="12" rx="6" fill="#6ee7b7" opacity=".85"/>
+    <rect x="220" y="108" width="90" height="12" rx="6" fill="#ffffff" opacity=".18"/>
+    <rect x="76" y="138" width="200" height="12" rx="6" fill="#ffffff" opacity=".22"/>
+    <rect x="106" y="168" width="90" height="12" rx="6" fill="#e4002b" opacity=".7"/>
+    <rect x="210" y="168" width="120" height="12" rx="6" fill="#ffffff" opacity=".18"/>
+    <rect x="76" y="198" width="160" height="12" rx="6" fill="#6ee7b7" opacity=".7"/>
+    <rect x="46" y="228" width="70" height="12" rx="6" fill="#41b6e6" opacity=".9"/>
+    <!-- big brackets -->
+    <text x="360" y="220" font-family="monospace" font-size="110" fill="url(#gT)" font-weight="bold">&lt;/&gt;</text>
+    <!-- terminal strip -->
+    <rect x="46" y="272" width="448" height="60" rx="10" fill="#081412" stroke="#ffffff" stroke-opacity=".1"/>
+    <rect x="64" y="296" width="10" height="14" fill="#34d399">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="84" y="298" width="150" height="10" rx="5" fill="#ffffff" opacity=".25"/>
+  </g>
+  <use href="#star" transform="translate(700 96) scale(1.5)" fill="#e4002b"/>
+</svg>

@@ -295,6 +295,18 @@
   max-width: 420px;
 }
 
+.why-skyline {
+  max-width: var(--container);
+  margin: clamp(40px, 6vw, 72px) auto 0;
+  padding: 0 24px;
+}
+
+.why-skyline img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .why-list {
   display: flex;
   flex-direction: column;

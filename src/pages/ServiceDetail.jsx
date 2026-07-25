@@ -105,6 +105,10 @@ export default function ServiceDetail() {
             {service.intro}
           </Reveal>
 
+          <Reveal variant="right" delay={0.35} className="sd-hero-art">
+            <img src={`/images/services/${service.slug}.svg`} alt={`${service.title} illustration`} width="800" height="560" />
+          </Reveal>
+
           <Reveal delay={0.45} className="sd-hero-actions">
             <Magnetic>
               <Link to="/contact" className="btn btn-primary" data-cursor-hover>

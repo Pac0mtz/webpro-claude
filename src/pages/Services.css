@@ -12,11 +12,32 @@
 
 .service-row {
   display: grid;
-  grid-template-columns: 90px 1fr auto;
+  grid-template-columns: 90px 220px 1fr auto;
   gap: 28px;
   align-items: center;
   padding: 32px;
   transition: border-color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.service-row-art {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.5s var(--ease);
+}
+
+.service-row:hover .service-row-art {
+  transform: scale(1.04) rotate(-1deg);
+}
+
+@media (max-width: 1080px) {
+  .service-row {
+    grid-template-columns: 90px 1fr auto;
+  }
+
+  .service-row-art {
+    display: none;
+  }
 }
 
 .service-row:hover {
