@@ -11,6 +11,79 @@
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
 }
 
+.pf-card-chrome {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.pf-card-chrome i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.pf-card-chrome i:first-child {
+  background: rgba(255, 107, 107, 0.55);
+}
+
+.pf-card-chrome b {
+  margin: 0 auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  background: rgba(255, 255, 255, 0.045);
+  border-radius: 999px;
+  padding: 2px 14px;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pf-card-live {
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  right: 12px;
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  background: rgba(4, 16, 15, 0.65);
+  color: var(--emerald-300);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease), background 0.35s var(--ease), color 0.35s var(--ease);
+}
+
+.pf-card:hover .pf-card-live {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pf-card-live:hover {
+  background: var(--emerald-400);
+  color: #04100f;
+}
+
+@media (hover: none) {
+  .pf-card-live {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .pf-card-art {
   position: relative;
   height: 240px;
