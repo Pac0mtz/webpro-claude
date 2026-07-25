@@ -18,7 +18,7 @@ export default function Footer() {
 
         <div className="footer-top">
           <div className="footer-brand">
-            <span className="nav-logo-mark">WPC</span>
+            <img src="/images/logo-web-pro.png" alt="Web Pro Chicago" className="footer-logo-img" width="230" height="100" />
             <p className="footer-tagline">
               Chicago locals who build websites that actually work. Web design, development, SEO & digital
               marketing for local businesses.

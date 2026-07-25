@@ -15,6 +15,12 @@
   gap: 20px;
 }
 
+.preloader-mark-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .preloader-mark {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.1rem;

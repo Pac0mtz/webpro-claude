@@ -57,7 +57,10 @@
   max-width: 340px;
 }
 
-.footer-brand .nav-logo-mark {
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
   margin-bottom: 18px;
 }
 

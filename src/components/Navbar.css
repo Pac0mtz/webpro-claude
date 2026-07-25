@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   z-index: 100;
+  padding: 0 18px;
   transition: top 0.4s var(--ease), transform 0.5s var(--ease), opacity 0.4s var(--ease);
 }
 
@@ -33,6 +34,12 @@
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   margin-right: auto;
+}
+
+.nav-logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 .nav-logo-mark {
@@ -130,7 +137,7 @@
 }
 
 .nav-mobile {
-  margin: 10px 18px 0;
+  margin: 10px 0 0;
   padding: 18px;
   display: flex;
   flex-direction: column;

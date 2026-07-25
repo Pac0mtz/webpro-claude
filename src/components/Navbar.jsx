@@ -40,8 +40,7 @@ export default function Navbar() {
     <header className={`nav-wrap ${scrolled ? "is-scrolled" : ""} ${hidden && !open ? "is-hidden" : ""}`}>
       <div className="container nav-inner glass">
         <Link to="/" className="nav-logo" onClick={() => setOpen(false)}>
-          <span className="nav-logo-mark">WPC</span>
-          <span className="nav-logo-text">Web Pro Chicago</span>
+          <img src="/images/logo-web-pro.png" alt="Web Pro Chicago" className="nav-logo-img" width="230" height="100" />
         </Link>
 
         <nav className="nav-links">

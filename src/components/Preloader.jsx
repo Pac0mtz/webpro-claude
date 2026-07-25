@@ -27,7 +27,7 @@ export default function Preloader() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="preloader-mark">WPC</div>
+            <img className="preloader-mark-img" src="/images/logo-web-pro.png" alt="Web Pro Chicago" width="230" height="100" />
             <motion.div
               className="preloader-bar"
               initial={{ scaleX: 0 }}
