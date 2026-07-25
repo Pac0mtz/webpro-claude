@@ -56,6 +56,27 @@
   opacity: 0.85;
 }
 
+/* Chicago-flag gradient — homepage hero only */
+.mesh-hero .mesh-blob-2 {
+  background: radial-gradient(circle at 60% 40%, #41b6e6, transparent 70%);
+  opacity: 0.6;
+}
+
+.mesh-hero .mesh-blob-3 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at 50% 50%, #e4002b, transparent 70%);
+  opacity: 0.42;
+}
+
+.mesh-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(65, 182, 230, 0.22) 0%, transparent 45%, transparent 55%, rgba(228, 0, 43, 0.16) 100%);
+  mask-image: radial-gradient(ellipse 80% 75% at 50% 35%, #000 35%, transparent 95%);
+}
+
 @keyframes drift-a {
   0%, 100% { transform: translate(0, 0) scale(1); }
   33% { transform: translate(40px, 30px) scale(1.08); }
