@@ -81,6 +81,8 @@
   .pf-card-live {
     opacity: 1;
     transform: none;
+    padding: 13px 18px;
+    font-size: 0.78rem;
   }
 }
 

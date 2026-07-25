@@ -276,6 +276,13 @@
   color: #04100f;
 }
 
+/* comfortable 44px+ touch targets on coarse pointers */
+@media (pointer: coarse) {
+  .filter-pill {
+    padding: 13px 20px;
+  }
+}
+
 .portfolio-grid-full {
   grid-template-columns: repeat(3, 1fr);
 }
