@@ -1,0 +1,28 @@
+.geo-mark {
+  --gm-emerald: #34d399;
+  --gm-blue: #41b6e6;
+  --gm-red: #e4002b;
+  display: block;
+  overflow: visible;
+}
+
+.geo-mark [fill="var(--gm-red)"] {
+  transition: transform 0.5s var(--ease);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* subtle brand-star pulse when the parent card is hovered */
+.sd-deliverable:hover .geo-mark [fill="var(--gm-red)"] {
+  transform: scale(1.5);
+}
+
+.geo-mark g {
+  transition: transform 0.6s var(--ease);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.sd-deliverable:hover .geo-mark g {
+  transform: scale(1.08);
+}

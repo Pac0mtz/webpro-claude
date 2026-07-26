@@ -6,6 +6,7 @@ import SplitText from "../components/SplitText";
 import MeshBackground from "../components/MeshBackground";
 import Magnetic from "../components/Magnetic";
 import FAQ from "../components/FAQ";
+import GeoMark from "../components/GeoMark";
 import PortfolioCard from "../components/PortfolioCard";
 import MarqueeText from "../components/MarqueeText";
 import { services, portfolio, process, business } from "../data/site";
@@ -136,7 +137,10 @@ export default function ServiceDetail() {
           <div className="sd-deliverables">
             {service.deliverables.map((d, i) => (
               <Reveal key={d.title} delay={(i % 3) * 0.08} className="sd-deliverable glass">
-                <span className="sd-deliverable-index">{String(i + 1).padStart(2, "0")}</span>
+                <div className="sd-deliverable-head">
+                  <GeoMark index={i} />
+                  <span className="sd-deliverable-index">{String(i + 1).padStart(2, "0")}</span>
+                </div>
                 <h3>{d.title}</h3>
                 <p>{d.description}</p>
               </Reveal>

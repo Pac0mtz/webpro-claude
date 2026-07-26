@@ -116,6 +116,13 @@
   border-color: var(--border-strong);
 }
 
+.sd-deliverable-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
 .sd-deliverable-index {
   font-family: "Space Grotesk", sans-serif;
   font-size: 0.85rem;
