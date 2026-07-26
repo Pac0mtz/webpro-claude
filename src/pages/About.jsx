@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import useSEO from "../hooks/useSEO";
 import Reveal from "../components/Reveal";
 import PageHero from "../components/PageHero";
+import GeoMark from "../components/GeoMark";
 import { aboutStats, values, team } from "../data/site";
 import "./About.css";
 
@@ -59,6 +60,7 @@ export default function About() {
           <div className="values-grid">
             {values.map((v, i) => (
               <Reveal key={v.title} delay={(i % 3) * 0.08} className="value-card glass">
+                <GeoMark index={i} />
                 <h4>{v.title}</h4>
                 <p>{v.description}</p>
               </Reveal>

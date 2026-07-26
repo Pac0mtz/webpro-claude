@@ -9,6 +9,7 @@ import MarqueeText from "../components/MarqueeText";
 import SplitText from "../components/SplitText";
 import RotatingWord from "../components/RotatingWord";
 import HorizontalWork from "../components/HorizontalWork";
+import GeoMark from "../components/GeoMark";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import MeshBackground from "../components/MeshBackground";
 import Magnetic from "../components/Magnetic";
@@ -228,7 +229,10 @@ export default function Home() {
           <div className="process-grid">
             {process.map((p, i) => (
               <Reveal key={p.tag} delay={i * 0.1} className="process-item">
-                <span className="process-tag">{p.tag}</span>
+                <div className="process-head">
+                  <span className="process-tag">{p.tag}</span>
+                  <GeoMark index={i} />
+                </div>
                 <h4>{p.title}</h4>
                 <p>{p.description}</p>
               </Reveal>

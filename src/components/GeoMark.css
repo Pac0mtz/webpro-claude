@@ -13,7 +13,9 @@
 }
 
 /* subtle brand-star pulse when the parent card is hovered */
-.sd-deliverable:hover .geo-mark [fill="var(--gm-red)"] {
+.sd-deliverable:hover .geo-mark [fill="var(--gm-red)"],
+.value-card:hover .geo-mark [fill="var(--gm-red)"],
+.process-item:hover .geo-mark [fill="var(--gm-red)"] {
   transform: scale(1.5);
 }
 
@@ -23,6 +25,8 @@
   transform-origin: center;
 }
 
-.sd-deliverable:hover .geo-mark g {
+.sd-deliverable:hover .geo-mark g,
+.value-card:hover .geo-mark g,
+.process-item:hover .geo-mark g {
   transform: scale(1.08);
 }

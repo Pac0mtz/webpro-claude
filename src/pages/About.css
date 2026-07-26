@@ -52,6 +52,16 @@
 
 .value-card {
   padding: 30px;
+  transition: transform 0.5s var(--ease), border-color 0.5s var(--ease);
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-strong);
+}
+
+.value-card .geo-mark {
+  margin-bottom: 16px;
 }
 
 .value-card h4 {

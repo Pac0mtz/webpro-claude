@@ -163,7 +163,10 @@ export default function ServiceDetail() {
           <div className="process-grid">
             {process.map((p, i) => (
               <Reveal key={p.tag} delay={i * 0.1} className="process-item">
-                <span className="process-tag">{p.tag}</span>
+                <div className="process-head">
+                  <span className="process-tag">{p.tag}</span>
+                  <GeoMark index={i} />
+                </div>
                 <h4>{p.title}</h4>
                 <p>{p.description}</p>
               </Reveal>
