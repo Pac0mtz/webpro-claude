@@ -72,12 +72,59 @@
   color: var(--emerald-300);
 }
 
-.hwork-media {
-  position: relative;
-  aspect-ratio: 16 / 10;
+.hwork-browser {
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--border);
+  background: var(--panel);
+  transition: border-color 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+
+.hwork-card:hover .hwork-browser {
+  border-color: rgba(52, 211, 153, 0.4);
+  box-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.7);
+}
+
+.hwork-chrome {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hwork-chrome i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hwork-chrome i:first-child {
+  background: rgba(255, 107, 107, 0.6);
+}
+
+.hwork-chrome b {
+  margin: 0 auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  padding: 3px 18px;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hwork-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
   background: var(--panel);
 }
 

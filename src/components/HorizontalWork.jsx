@@ -4,6 +4,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Reveal from "./Reveal";
 import "./HorizontalWork.css";
 
+const domainOf = (url) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+};
+
 // Sticky section: vertical scroll drives the track horizontally (desktop).
 // On touch/small screens it degrades to a native horizontal scroller.
 export default function HorizontalWork({ projects, eyebrow, title }) {
@@ -44,12 +52,20 @@ export default function HorizontalWork({ projects, eyebrow, title }) {
           {projects.map((p, i) => (
             <Link to={`/portfolio/${p.slug}`} className="hwork-card" key={p.slug} data-cursor-hover>
               <span className="hwork-index">{String(i + 1).padStart(2, "0")}</span>
-              <div className="hwork-media">
-                {p.image ? (
-                  <img src={p.image} alt={`${p.title} website preview`} loading="lazy" />
-                ) : (
-                  <div className="hwork-media-fallback">{p.tag}</div>
-                )}
+              <div className="hwork-browser">
+                <span className="hwork-chrome" aria-hidden="true">
+                  <i />
+                  <i />
+                  <i />
+                  <b>{domainOf(p.liveUrl) ?? "private build"}</b>
+                </span>
+                <div className="hwork-media">
+                  {p.image ? (
+                    <img src={p.image} alt={`${p.title} website preview`} loading="lazy" />
+                  ) : (
+                    <div className="hwork-media-fallback">{p.tag}</div>
+                  )}
+                </div>
               </div>
               <div className="hwork-meta">
                 <h3>{p.title}</h3>
